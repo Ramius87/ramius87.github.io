@@ -1,0 +1,141 @@
+body {
+  font-family: 'Rock Salt', sans-serif;
+  background-image: url("http://godlywoodstudio.org/wp-content/uploads/2014/11/Grey-website-background.png");
+}
+
+footer {
+  color: #DDD;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer p {
+  margin: 1rem;
+}
+
+h1 {
+  text-align: center;
+  color: #FFF;
+}
+
+h1 small {
+  color: #4BACCC;
+}
+
+h2 {
+  text-align: center;
+  color: #CCC;
+}
+
+h3 {
+  color: #4BACCC;
+}
+
+h4 {
+  color: #32748A;
+}
+
+section {
+  padding-top: 3.75rem;
+}
+
+.btn.btn-primary {
+  color: #fff;
+  background: #555;
+  border: solid 2px #fff;
+  border-radius: 50%;
+  display: inline-block;
+  width: auto;
+  height: 8rem;
+  padding-top: 1.25rem;
+  padding-left: 1.25rem;
+  padding right: 1.25rem;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  text-align: center;
+  font-size: 2.3rem;
+  line-height: 6rem;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  position: relative;
+}
+
+.btn.btn-primary:active {
+  top: 2px;
+}
+
+.btn.btn-primary:hover {
+  color: #555;
+  background: #fff;
+  border: solid 2px #555;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  margin: auto;
+}
+
+.projectCarouselImg img {
+  width: auto;
+  height: 31.25rem;
+}
+
+.jumbotron h1 {
+  color: #FFF;
+}
+
+.social-button {
+  color: #fff;
+  border: solid 2px #fff;
+  border-radius: 50%;
+  display: inline-block;
+  width: 6.25rem;
+  height: 6.25rem;
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 6rem;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.social-button:hover {
+  border: solid 2px #fff;
+  color: #444;
+  background: #fff;
+}
+
+#about .jumbotron {
+  background-image: url("http://goo.gl/1YFmTG");
+  background-position: 50% 30%;
+  padding-bottom: 20rem;
+}
+
+#about .jumbotron p {
+  font-size: 1.7rem;
+  color: #EEE;
+}
+
+#about .jumbotron h1 {
+  font-size: 6rem;
+}
+
+#about img {
+  padding-top: 3rem;
+  max-width: 75%;
+  height: auto;
+}
+
+#home {
+  margin: 2.5rem 0px 1.875rem 0px;
+  width: auto;
+  background-image: url("http://mobo.co.uk/wp-content/uploads/2014/11/Website-Design-Background.png");
+  background-size: cover;
+  background-position: left bottom;
+}
+
+#home2 {
+  margin-top: 9rem;
+  position: center;
+  text-align: center;
+}

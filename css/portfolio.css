@@ -1,6 +1,6 @@
 body {
   font-family: 'Rock Salt', sans-serif;
-  background-image: url("http://godlywoodstudio.org/wp-content/uploads/2014/11/Grey-website-background.png");
+  background-image: url("/images/grey-website-background.png");
 }
 
 footer {
@@ -106,7 +106,7 @@ section {
 }
 
 #about .jumbotron {
-  background-image: url("http://goo.gl/1YFmTG");
+  background-image: url("/images/cologne-sunset.jpg");
   background-position: 50% 30%;
   padding-bottom: 20rem;
 }
@@ -129,7 +129,7 @@ section {
 #home {
   margin: 2.5rem 0px 1.875rem 0px;
   width: auto;
-  background-image: url("http://mobo.co.uk/wp-content/uploads/2014/11/Website-Design-Background.png");
+  background-image: url("/images/Website-Design-Background.png");
   background-size: cover;
   background-position: left bottom;
 }

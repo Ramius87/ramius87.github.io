@@ -15,6 +15,7 @@ footer p {
 }
 
 h1 {
+  font-size: 3vw;
   text-align: center;
   color: #FFF;
 }
@@ -24,20 +25,23 @@ h1 small {
 }
 
 h2 {
+  font-size: 2.5vw;
   text-align: center;
   color: #CCC;
 }
 
 h3 {
+  font-size: 1.5vw;
   color: #4BACCC;
 }
 
 h4 {
+  font-size: 1.5vw;
   color: #32748A;
 }
 
 section {
-  padding-top: 3.75rem;
+  padding-top: 4.75rem;
 }
 
 .btn.btn-primary {
@@ -47,15 +51,15 @@ section {
   border-radius: 50%;
   display: inline-block;
   width: auto;
-  height: 8rem;
-  padding-top: 1.25rem;
-  padding-left: 1.25rem;
-  padding right: 1.25rem;
-  margin-left: 1.25rem;
-  margin-right: 1.25rem;
+  height: 5vw;
+  padding-top: 0.2vw;
+  padding-left: 1vw;
+  padding right: 1vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
   text-align: center;
-  font-size: 2.3rem;
-  line-height: 6rem;
+  font-size: 1.5vw;
+  line-height: 5vw;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   position: relative;
@@ -83,6 +87,7 @@ section {
 
 .jumbotron h1 {
   color: #FFF;
+  font-size: 4.5vw;
 }
 
 .social-button {
@@ -90,11 +95,11 @@ section {
   border: solid 2px #fff;
   border-radius: 50%;
   display: inline-block;
-  width: 6.25rem;
-  height: 6.25rem;
+  width: 5vw;
+  height: 5vw;
   text-align: center;
-  font-size: 2.5rem;
-  line-height: 6rem;
+  font-size: 2vw;
+  line-height: 5vw;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
 }
@@ -107,27 +112,28 @@ section {
 
 #about .jumbotron {
   background-image: url("/images/cologne-sunset.jpg");
-  background-position: 50% 30%;
-  padding-bottom: 20rem;
+  background-position: center center;
+  padding-bottom: 10vw;
 }
 
 #about .jumbotron p {
-  font-size: 1.7rem;
+  font-size: 1.5vw;
   color: #EEE;
 }
 
 #about .jumbotron h1 {
-  font-size: 6rem;
+  font-size: 5vw;
 }
 
 #about img {
-  padding-top: 3rem;
-  max-width: 75%;
+  padding-top: 2vw;
+  max-width: 80%;
   height: auto;
 }
 
 #home {
   margin: 2.5rem 0px 1.875rem 0px;
+  padding-top: 10vw;
   width: auto;
   background-image: url("/images/Website-Design-Background.png");
   background-size: cover;

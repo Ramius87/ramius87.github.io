@@ -10,8 +10,8 @@ var main = function() {
           $(".front").css("transform", "perspective(800px) scale(1) translateX(0) rotateY(0)");
            menu_hidden= true;
       }
-      // not working but why????
-      $(".btn-active").removeClass('btn-active');
+      // Removing the focus after clicking the menu-btn
+      $(this).blur();
   });
 
     

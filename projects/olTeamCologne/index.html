@@ -13,8 +13,16 @@
     </head>
 
     <body>
+       
+       <!--Preloader-->
+       <div id="loader-wrapper">
+           <div id="loader">
+  
+           </div>
+       </div>
+       
         <!--Header & Navigation Bar-->
-        <header class="container">
+        <header class="container" id="hidden-header">
             <nav class="navbar navbar-inverse navbar-fixed-top">
                 <div class="container-fluid">
                     <div class="navbar-header">
@@ -37,7 +45,7 @@
         </header>
 
         <!--The hidden navbar-->
-        <nav class="layer">
+        <nav class="layer" id="hiddenMenu">
             <ul>
                 <li><a href=""><span class="glyphicon glyphicon-home p-r-1"></span>Home</a></li>
                 <li><a href=""><i class="fa fa-question-circle p-r-1"></i>Was ist OL?</a></li>
@@ -53,7 +61,7 @@
         </nav>
 
         <!--Layer covering the navbar-->
-        <section class="front page layer">
+        <section class="front page layer" id="animateMap">
             <div class="jumbotron" id="homeBox">
                 <div class="row">
                     <div class="col-xs-8">

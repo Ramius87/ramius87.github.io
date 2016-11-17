@@ -7,4 +7,5 @@ This repository represents my personal portfolio webpage including all my other 
 
 * Bruce Lee Tribute Page
 * The Personal Portfolio Page itself
+* A Random Quote Machine
 * *More to come soon ...* 

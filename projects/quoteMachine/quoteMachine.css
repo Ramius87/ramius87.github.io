@@ -1,0 +1,657 @@
+@import 'https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz';
+body {
+    background-color: #333;
+}
+
+button {
+    position: relative;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: none;
+    background-color: rgba(25, 163, 209, 1);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 700;
+    font-size: 3em;
+    display: block;
+    padding: 4px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 9px 0px rgba(0, 137, 184, 1), 0px 9px 25px rgba(0, 0, 0, .7);
+    margin: 60px auto;
+    width: 180px;
+    text-align: center;
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    transition: all .1s ease;
+    cursor: pointer;
+}
+
+button:active {
+    box-shadow: 0px 3px 0px rgba(0, 137, 184, 1), 0px 3px 6px rgba(0, 0, 0, .9);
+    position: relative;
+    top: 6px;
+}
+
+button.inactive {
+    background-color: rgba(170, 170, 170, 1);
+    border: none;
+    box-shadow: 0px 9px 0px rgba(100, 100, 100, 1), 0px 9px 25px rgba(0, 0, 0, .7);
+}
+
+button.inactive:active {
+    border: none;
+    box-shadow: 0px 3px 0px rgba(100, 100, 100, 1), 0px 3px 6px rgba(0, 0, 0, .9);
+    position: relative;
+    top: 6px;
+}
+
+button#twitter {
+    width: 90px;
+    border-radius: 100%;
+}
+
+h1 {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+}
+
+p {
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.author {
+    text-align: right;
+}
+
+
+/********************************************************************
+CARD SETTINGS
+ ********************************************************************/
+
+.card {
+    background-color: rgba(0, 120, 160, 1);
+    position: relative;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 275px;
+    height: 150px;
+    padding: 1rem;
+    -moz-box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.7), inset 0 0 50px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.7), inset 0 0 50px rgba(0,0,0,0.5);
+    box-shadow: 0 -10px 50px rgba(0, 0, 0, 0.7), inset 0 0 50px rgba(0,0,0,0.5);
+}
+
+.card:before,
+.card:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    height: 20%;
+    -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    transform: rotate(-4deg);
+}
+
+.card:after {
+    transform: rotate(4deg);
+    right: 10px;
+    left: auto;
+}
+
+/********************************************************************
+Lightbulb
+ ********************************************************************/
+
+.lightbulb {
+  position: absolute;
+  top: 100px;
+  left: 350px; }
+  .lightbulb svg {
+    height: 100px;
+    width: 100px; }
+
+.lb-head {
+  fill: #c4c4c4;
+  transition: all 0.3s ease; }
+
+/********************************************************************
+GEARBOX SETTINGS
+ ********************************************************************/
+
+.gearbox {
+    background: #111;
+    height: 400px;
+    width: 230px;
+    position: absolute;
+    border-radius: 20px;
+    -moz-box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.1);
+    border: none;
+    overflow: hidden;
+}
+
+.gearbox#gearbox-left {
+    top: 10%;
+    left: 5%;
+}
+
+.gearbox#gearbox-right {
+    top: 10%;
+    right: 5%;
+}
+
+/********************************************************************
+SMALL GEAR SETTINGS
+ ********************************************************************/
+
+.gear {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    -moz-box-shadow: 0px -1px 0px 0px #888888, 0px 1px 0px 0px black;
+    -webkit-box-shadow: 0px -1px 0px 0px #888888, 0px 1px 0px 0px black;
+    box-shadow: 0px -1px 0px 0px #888888, 0px 1px 0px 0px black;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+}
+
+.gear.one {
+    top: 225px;
+    left: -3px;
+}
+
+.gear.two {
+    top: 249px;
+    left: 64px;
+}
+
+.gear.three {
+    top: 35px;
+    left: 24px;
+}
+
+.gear:after {
+    content: "";
+    position: absolute;
+    height: 36px;
+    width: 36px;
+    -moz-border-radius: 36px;
+    -webkit-border-radius: 36px;
+    border-radius: 36px;
+    background: #111;
+    top: 50%;
+    left: 50%;
+    margin-left: -18px;
+    margin-top: -18px;
+    z-index: 3;
+    -moz-box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1), inset 0px 0px 10px rgba(0, 0, 0, 0.1), inset 0px 2px 0px 0px #090909, inset 0px -1px 0px 0px #888888;
+    -webkit-box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1), inset 0px 0px 10px rgba(0, 0, 0, 0.1), inset 0px 2px 0px 0px #090909, inset 0px -1px 0px 0px #888888;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1), inset 0px 0px 10px rgba(0, 0, 0, 0.1), inset 0px 2px 0px 0px #090909, inset 0px -1px 0px 0px #888888;
+}
+
+.gear-inner {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: #555;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gear-inner .bar {
+    background: #555;
+    height: 16px;
+    width: 76px;
+    position: absolute;
+    left: 50%;
+    margin-left: -38px;
+    top: 50%;
+    margin-top: -8px;
+    border-radius: 2px;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gear-inner .bar:nth-child(2) {
+    transform: rotate(60deg);
+}
+
+.gear-inner .bar:nth-child(3) {
+    transform: rotate(120deg);
+}
+
+
+/********************************************************************
+MEDIUM GEAR SETTINGS
+ ********************************************************************/
+
+.gear-medium {
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    -moz-box-shadow: 0px -1px 0px 0px #888888, 0px 1px 0px 0px black;
+    -webkit-box-shadow: 0px -1px 0px 0px #888888, 0px 1px 0px 0px black;
+    box-shadow: 0px -1px 0px 0px #888888, 0px 1px 0px 0px black;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+}
+
+.gear-medium.one {
+    top: 236px;
+    left: 135px;
+}
+
+.gear-medium.two {
+    top: -48px;
+    left: 80px;
+}
+
+.gear-medium.three {
+    top: 335px;
+    left: -84px;
+}
+
+.gear-medium.four {
+    top: 114px;
+    left: 83px;
+}
+
+.gear-medium:after {
+    content: "";
+    position: absolute;
+    height: 96px;
+    width: 96px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #111;
+    top: 50%;
+    left: 50%;
+    margin-left: -48px;
+    margin-top: -48px;
+    z-index: 3;
+    -moz-box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1), inset 0px 0px 10px rgba(0, 0, 0, 0.1), inset 0px 2px 0px 0px #090909, inset 0px -1px 0px 0px #888888;
+    -webkit-box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1), inset 0px 0px 10px rgba(0, 0, 0, 0.1), inset 0px 2px 0px 0px #090909, inset 0px -1px 0px 0px #888888;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1), inset 0px 0px 10px rgba(0, 0, 0, 0.1), inset 0px 2px 0px 0px #090909, inset 0px -1px 0px 0px #888888;
+}
+
+.gear-medium-inner {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: #555;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gear-medium-inner .bar {
+    background: #555;
+    height: 16px;
+    width: 136px;
+    position: absolute;
+    left: 50%;
+    margin-left: -68px;
+    top: 50%;
+    margin-top: -8px;
+    border-radius: 2px;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gear-medium-inner .bar:nth-child(2) {
+    transform: rotate(60deg);
+}
+
+.gear-medium-inner .bar:nth-child(3) {
+    transform: rotate(120deg);
+}
+
+.gear-medium-inner .bar:nth-child(4) {
+    transform: rotate(30deg);
+}
+
+.gear-medium-inner .bar:nth-child(5) {
+    transform: rotate(90deg);
+}
+
+.gear-medium-inner .bar:nth-child(6) {
+    transform: rotate(150deg);
+}
+
+
+/********************************************************************
+LARGE GEAR SETTINGS
+ ********************************************************************/
+
+.gear-large {
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    -moz-box-shadow: 0px -1px 0px 0px #888888, 0px 1px 0px 0px black;
+    -webkit-box-shadow: 0px -1px 0px 0px #888888, 0px 1px 0px 0px black;
+    box-shadow: 0px -1px 0px 0px #888888, 0px 1px 0px 0px black;
+    -moz-border-radius: 90px;
+    -webkit-border-radius: 90px;
+    border-radius: 90px;
+}
+
+/* Large gear on the bottom */
+.gear-large.one {
+    top: 354px;
+    left: 39px;
+}
+
+/* Large gear on the left */
+.gear-large.two {
+    top: 55px;
+    left: -142px;
+}
+
+/* Large gear on the right top */
+.gear-large.three {
+    top: 3px;
+    left: 192px;
+}
+
+.gear-large:after {
+    content: "";
+    position: absolute;
+    height: 156px;
+    width: 156px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #111;
+    top: 50%;
+    left: 50%;
+    margin-left: -77px;
+    margin-top: -77px;
+    z-index: 3;
+    -moz-box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1), inset 0px 0px 10px rgba(0, 0, 0, 0.1), inset 0px 2px 0px 0px #090909, inset 0px -1px 0px 0px #888888;
+    -webkit-box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1), inset 0px 0px 10px rgba(0, 0, 0, 0.1), inset 0px 2px 0px 0px #090909, inset 0px -1px 0px 0px #888888;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1), inset 0px 0px 10px rgba(0, 0, 0, 0.1), inset 0px 2px 0px 0px #090909, inset 0px -1px 0px 0px #888888;
+}
+
+.gear-large-inner {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: #555;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -moz-border-radius: 90px;
+    -webkit-border-radius: 90px;
+    border-radius: 90px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gear-large-inner .bar {
+    background: #555;
+    height: 16px;
+    width: 196px;
+    position: absolute;
+    left: 50%;
+    margin-left: -98px;
+    top: 50%;
+    margin-top: -8px;
+    border-radius: 2px;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gear-large-inner .bar:nth-child(2) {
+    transform: rotate(20deg);
+}
+
+.gear-large-inner .bar:nth-child(3) {
+    transform: rotate(40deg);
+}
+
+.gear-large-inner .bar:nth-child(4) {
+    transform: rotate(60deg);
+}
+
+.gear-large-inner .bar:nth-child(5) {
+    transform: rotate(80deg);
+}
+
+.gear-large-inner .bar:nth-child(6) {
+    transform: rotate(100deg);
+}
+
+.gear-large-inner .bar:nth-child(7) {
+    transform: rotate(120deg);
+}
+
+.gear-large-inner .bar:nth-child(8) {
+    transform: rotate(140deg);
+}
+
+.gear-large-inner .bar:nth-child(9) {
+    transform: rotate(160deg);
+}
+
+
+/********************************************************************
+ANIMATED CLASSES
+ ********************************************************************/
+
+
+/*Class to rotate small gear clockwise */
+
+.rotating-small-clockwise {
+    -webkit-animation: clockwise 3s infinite linear;
+    -moz-animation: clockwise 3s infinite linear;
+}
+
+
+/*Class to rotate small gear counter-clockwise */
+
+.rotating-small-counter-clockwise {
+    -webkit-animation: counter-clockwise 3s infinite linear;
+    -moz-animation: counter-clockwise 3s infinite linear;
+}
+
+
+/*Class to rotate medium gear clockwise */
+
+.rotating-large-clockwise {
+    -webkit-animation: clockwise 9s infinite linear;
+    -moz-animation: clockwise 9s infinite linear;
+}
+
+
+/*Class to rotate medium gear counter-clockwise */
+
+.rotating-medium-counter-clockwise {
+    -webkit-animation: counter-clockwise 6s infinite linear;
+    -moz-animation: counter-clockwise 6s infinite linear;
+}
+
+
+/*Class to rotate large gear clockwise */
+
+.rotating-medium-clockwise {
+    -webkit-animation: clockwise 6s infinite linear;
+    -moz-animation: clockwise 6s infinite linear;
+}
+
+
+/*Class to rotate large gear counter-clockwise */
+
+.rotating-large-counter-clockwise {
+    -webkit-animation: counter-clockwise 9s infinite linear;
+    -moz-animation: counter-clockwise 9s infinite linear;
+}
+
+/* Animation to let paper fall down to reveal next note*/ 
+
+.hinge {
+  -webkit-animation-name: hinge;
+  animation-name: hinge;
+}
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+
+/********************************************************************
+ANIMATION DEFINITION
+ ********************************************************************/
+
+
+/*Animation to rotate clockwise */
+
+@-webkit-keyframes clockwise {
+    0% {
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes clockwise {
+    0% {
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+/*Animation to rotate counter-clockwise */
+
+@-webkit-keyframes counter-clockwise {
+    0% {
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+
+@-moz-keyframes counter-clockwise {
+    0% {
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+
+/* Animation to let paper fall down to reveal next note*/ 
+@-webkit-keyframes hinge {
+  0% {
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+
+  20%, 60% {
+    -webkit-transform: rotate3d(0, 0, 1, 80deg);
+    transform: rotate3d(0, 0, 1, 80deg);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+
+  40%, 80% {
+    -webkit-transform: rotate3d(0, 0, 1, 60deg);
+    transform: rotate3d(0, 0, 1, 60deg);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 700px, 0);
+    transform: translate3d(0, 700px, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes hinge {
+  0% {
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+
+  20%, 60% {
+    -webkit-transform: rotate3d(0, 0, 1, 80deg);
+    transform: rotate3d(0, 0, 1, 80deg);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+  }
+
+  40%, 80% {
+    -webkit-transform: rotate3d(0, 0, 1, 60deg);
+    transform: rotate3d(0, 0, 1, 60deg);
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 700px, 0);
+    transform: translate3d(0, 700px, 0);
+    opacity: 0;
+  }
+}

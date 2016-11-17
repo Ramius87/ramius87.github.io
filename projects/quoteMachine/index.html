@@ -1,0 +1,250 @@
+<doctype html>
+    <html lang="en">
+
+    <head>
+        <link rel="stylesheet" href="quoteMachine.css" />
+        <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="quoteMachine.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <h1>Quote Machine</h1>
+            </div>
+        </header>
+
+        <!-- The overall container which includes all the machine parts -->
+        <div class="machine">
+
+            <!-- The display which displays a new quote -->
+            <div class="card">
+                <p class="quote">Click the button to receive a random quote!</p>
+                <p class="author"></p>
+            </div>
+
+            <!-- Button to create a new quote-->
+            <button id="getQuote">New Quote</button>
+            
+            <!-- Link to tweet the quote -->
+            <button id="twitter" class="inactive" disabled>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </button>
+
+            <!-- A kind of window where you can see the gears of the machine -->
+            <div class="gearbox" id="gearbox-left">
+                <div class="gear one">
+                    <div class="gear-inner">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="gear two">
+                    <div class="gear-inner">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="gear three">
+                    <div class="gear-inner">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="gear-medium one">
+                    <div class="gear-medium-inner">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="gear-medium two">
+                    <div class="gear-medium-inner">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="gear-medium three">
+                    <div class="gear-medium-inner">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="gear-medium four">
+                    <div class="gear-medium-inner">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="gear-large one">
+                    <div class="gear-large-inner">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="gear-large two">
+                    <div class="gear-large-inner">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="gear-large three">
+                    <div class="gear-large-inner">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- A kind of window where you can see the gears of the machine -->
+            <div class="gearbox" id="gearbox-right">
+                <div class="gear one">
+                    <div class="gear-inner">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="gear two">
+                    <div class="gear-inner">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="gear three">
+                    <div class="gear-inner">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="gear-medium one">
+                    <div class="gear-medium-inner">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="gear-medium two">
+                    <div class="gear-medium-inner">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="gear-medium three">
+                    <div class="gear-medium-inner">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="gear-medium four">
+                    <div class="gear-medium-inner">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="gear-large one">
+                    <div class="gear-large-inner">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="gear-large two">
+                    <div class="gear-large-inner">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="gear-large three">
+                    <div class="gear-large-inner">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </body>
+
+    </html>
+</doctype>
